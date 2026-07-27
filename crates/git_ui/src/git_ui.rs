@@ -44,6 +44,7 @@ mod conflict_view;
 pub mod created_worktrees;
 mod diff_multibuffer;
 pub mod file_diff_view;
+pub mod git_command_center;
 pub mod git_graph;
 pub mod git_panel;
 mod git_panel_settings;
@@ -162,6 +163,10 @@ pub fn init(cx: &mut App) {
         if project.is_read_only(cx) {
             return;
         }
+        // Registered past the read-only guard: none of the actions its rows
+        // dispatch are registered in a read-only project, so the palette would
+        // be a page of rows that do nothing.
+        git_command_center::register(workspace);
         if !project.is_via_collab() {
             workspace.register_action(
                 |workspace, _: &zed_actions::git::CreatePullRequest, window, cx| {
