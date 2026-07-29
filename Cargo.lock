@@ -18645,6 +18645,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "test_runner"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "collections",
+ "gpui",
+ "language",
+ "project",
+ "task",
+ "terminal",
+ "text",
+]
+
+[[package]]
 name = "text"
 version = "0.1.0"
 dependencies = [

@@ -207,6 +207,7 @@ members = [
     "crates/telemetry_events",
     "crates/terminal",
     "crates/terminal_view",
+    "crates/test_runner",
     "crates/text",
     "crates/theme",
     "crates/theme_extension",
@@ -471,6 +472,7 @@ telemetry = { path = "crates/telemetry" }
 telemetry_events = { path = "crates/telemetry_events" }
 terminal = { path = "crates/terminal" }
 terminal_view = { path = "crates/terminal_view" }
+test_runner = { path = "crates/test_runner" }
 text = { path = "crates/text" }
 theme = { path = "crates/theme" }
 theme_extension = { path = "crates/theme_extension" }
