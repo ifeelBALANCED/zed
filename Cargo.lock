@@ -18650,12 +18650,18 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "collections",
+ "editor",
+ "fs",
  "gpui",
  "language",
  "project",
+ "settings",
  "task",
  "terminal",
+ "terminal_view",
  "text",
+ "ui",
+ "workspace",
 ]
 
 [[package]]
@@ -23364,6 +23370,7 @@ dependencies = [
  "telemetry_events",
  "tempfile",
  "terminal_view",
+ "test_runner",
  "theme",
  "theme_extension",
  "theme_selector",
